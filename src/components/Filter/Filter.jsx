@@ -9,12 +9,18 @@ const Label = styled.label`
 `;
 
 const Input = styled.input`
-  width: 10vw;
+  width: 95%;
   margin-top: 5px;
   &:focus {
     outline: 3px solid #1ac7d2;
     border: none;
   }
+    @media (min-width: 769px){
+    width: 80%;
+  };
+  @media (min-width: 1024px) {
+    width: 30%;
+  })
 `;
 
 const Filter = ({ onFilterInput, onBlur, value }) => {

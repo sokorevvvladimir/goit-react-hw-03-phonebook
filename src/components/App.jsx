@@ -6,7 +6,7 @@ import Notification from './Notification';
 import Filter from './Filter';
 
 const Container = styled.div`
-  width: 1200px;
+  width: 95vw;
   margin: 0 auto;
 `;
 

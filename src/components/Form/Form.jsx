@@ -8,7 +8,7 @@ const FormHtml = styled.form`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 30vw;
+  // width: 100%;
   height: 150px;
   padding: 10px;
   background-image: repeating-linear-gradient(
@@ -18,6 +18,12 @@ const FormHtml = styled.form`
     #25515a 10px,
     #25515a 20px
   );
+  @media (min-width: 769px){
+    width: 80%;
+  };
+  @media (min-width: 1024px) {
+    width: 30%;
+  })
 `;
 
 const Label = styled.label`
@@ -28,7 +34,7 @@ const Label = styled.label`
 `;
 
 const Input = styled.input`
-  width: 10vw;
+  width: 95%;
   margin-top: 5px;
   &:focus {
     outline: 3px solid #1ac7d2;
@@ -37,7 +43,7 @@ const Input = styled.input`
 `;
 
 const Button = styled.button`
-  width: 7vw;
+  width: 40vw;
   font-size: 12px;
   font-weight: 400;
   border-radius: 3px;
@@ -48,6 +54,12 @@ const Button = styled.button`
   &:active {
     color: #ffffff;
     background-color: #b3c2c4;
+  }
+  @media (min-width: 769px) {
+    width: 20vw;
+  }
+  @media (min-width: 1024px) {
+    width: 10vw;
   }
 `;
 
