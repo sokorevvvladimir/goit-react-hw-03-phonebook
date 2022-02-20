@@ -7,7 +7,7 @@ const Li = styled.li`
 `;
 
 const Button = styled.button`
-  width: 50px;
+  width: 100px;
   font-size: 12px;
   font-weight: 400;
   border-radius: 3px;
